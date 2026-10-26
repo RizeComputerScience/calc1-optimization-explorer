@@ -2915,7 +2915,7 @@ function boxGraph() {
   return {
     x: [0, 7], y: [-30, 138], h: 274, pad: { l: 68, r: 14, t: 16, b: 52 }, grid: true, ticks: { x: 1, y: 20 }, labels: { x: 'h (in)', y: 'V (in³)' },
     fns: [{ f: boxV, domain: [0, 5], role: 'outside' }, { f: boxV, domain: [5, 7], role: 'muted', dash: true }],
-    vlines: [{ x: 5, role: 'muted', dash: true }],
+    vlines: [{ x: 5, role: 'muted' }],
     dots: [{ x: 0, y: 0, role: 'k' }, { x: 5, y: 0, role: 'k' }],
     drag: { f: boxV, x: 1, min: 0, max: 5, step: 0.01, dp: 2, xName: 'h', yName: 'V(h)', redraw: ['box-fig'],
       label: 'A point on the graph of V(h). Use the arrow keys to change the cut h.',

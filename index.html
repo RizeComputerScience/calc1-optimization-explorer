@@ -2781,7 +2781,6 @@ var selfcheck = (function () {
      preChoice: registers a gated choice at load, so the answered-state checks see it. */
 
 var U_OPT = 'https://tutorial.math.lamar.edu/Classes/CalcI/Optimization.aspx';
-var U_PROB = 'https://tutorial.math.lamar.edu/Problems/CalcI/Optimization.aspx';
 var METHODS = [U_OPT, 'Reread Paul’s three methods, after Example 1'];
 
 function ask(text) { return '<p class="ptext">' + P(text) + '</p>'; }
@@ -3124,7 +3123,7 @@ function p2HTML() {
 
 /* ---------------- page ---------------- */
 function page() {
-  return header('Optimization Explorer', [['#sec-fence', 'Fence'], ['#sec-box', 'Box'], ['#sec-setup', 'Divider'], ['#sec-open', 'Open Box'], ['#sec-back', 'Back to Paul']]) +
+  return header('Optimization Explorer', [['#sec-fence', 'Fence'], ['#sec-box', 'Box'], ['#sec-setup', 'Divider'], ['#sec-open', 'Open Box'], ['#sec-back', 'Back to Unit 10']]) +
     '<main id="top">' + hero({ kicker: 'Calculus I · Unit 10', title: 'Optimization Explorer',
       dek: 'In Examples 1 and 5 of [Paul’s Optimization notes](' + U_OPT + '), each quantity becomes a function of one variable. Drag the fence and the box to watch the quantity and its graph change together. Then set up two new problems, with each step checked.' }) +
     sec('sec-fence', '1', 'The Fence in Example 1', '') +
@@ -3146,8 +3145,8 @@ function page() {
     sec('sec-open', '4', 'When Method 1 Does Not Apply', '') +
     prose('', ['Method 1 needs a closed interval, with both endpoints included, and a function continuous on it. In Paul’s Examples 2, 3, 4 and 6 the domain is not a closed interval, and the same is true here.']) +
     col(p2HTML()) +
-    sec('sec-back', '', 'Back to Paul', '') +
-    prose('', ['Continue with [Paul’s Optimization practice problems](' + U_PROB + '), Problems 1 to 8. Problem 8 cuts the corners from a sheet of cardboard, as Example 5 does.']) +
+    sec('sec-back', '', 'Back to Unit 10', '') +
+    prose('', ['Return to Unit 10: Optimization and continue with section 2, More Optimization Problems.']) +
     '</main>';
 }
 expose({ fenceA: fenceA, boxV: boxV, fenceY: fenceY, boxH: boxH, FIGS: FIGS });
